@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  /* --background-select: linear-gradient(to left, #34495e 3rem, #2c3e50 3rem); */
+  --background-select: #18191D;
+
+}
+
+iframe[id="noop"] {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  background: #0D0E13;
+  color: white;
+  position: relative;
+}
+
+.part-1 {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.part-1 nav {
+  width: 80%;
+  /* height: 150px; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  /* margin-top: 40px; */
+}
+
+.part-1 nav .left-nav div {
+  font-size: .77rem;
+  color: #56B9E1;
+}
+
+.part-1 .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.part-1 .content .name-content {
+  margin: 10px 0;
+}
+
+.part-1 .content .cards {
+  display: grid;
+  /* grid-template-rows: 150px;
+grid-auto-rows: 150px; */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.part-1 .content .cards .card {
+  padding: 30px 10px;
+  background: #18191D;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.part-1 .content .cards .card .icon-card {
+  width: 25px;
+  height: 25px;
+  margin: 10px 0;
+}
+
+.part-1 .content .cards .card .name {
+  font-size: .7rem;
+  font-weight: light;
+}
+
+.part-2,
+.part-3 {
+  background: #18191D;
+}
+
+.part-2 {
+  width: 100%;
+  padding: 30px 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.part-2 a img.icon {
+  width: 50px;
+  height: 30px;
+}
+
+.part-2 ul {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: flex-start;
+  max-height: 580px;
+  overflow-x: hidden;
+}
+
+.part-2 ul li:not(:last-of-type) {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.part-2 ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+.part-2 ul li a {
+  margin-left: 15px;
+  font-size: .8rem;
+  color: #7E7E7E;
+}
+
+.part-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 5px;
+}
+
+.part-3 .icons {
+  margin-bottom: 20px;
+}
+
+.part-3 .icons .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.part-3 p {
+  font-size: .8rem;
+}
+
+.top-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.top-content .left-top-content,
+.top-content .right-top-content {
+  width: calc(100% / 2);
+}
+
+input.inputBox,
+input.salle {
+  background: #18191D;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.calendarWrap {
+  display: inline-block;
+  position: relative;
+}
+
+.calendarElement {
+  position: absolute;
+  width: 3cap;
+  left: 50%;
+  top: 40px;
+  border: 1px solid #ccc;
+  z-index: 1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+#TraiteurToolsX98234 > div:last-child {
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#TraiteurToolsX98234 > div:last-child > div {
+  width: 100%;
+}
+
+#TraiteurToolsX98234 > div:last-child > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#TraiteurActions {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#TraiteurActions>div:first-of-type {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#TraiteurActions>div:first-of-type>div {
+  width: calc(98% / 5);
+}
+
+#TraiteurActions>div:first-of-type>div select,
+#UpdateTraiteur_Tool>form>div select,
+#ReturnedTools_Page > div:first-of-type select {
+  cursor: pointer;
+}
+
+#TraiteurActions>div:first-of-type>div select,
+#TraiteurActions>div:first-of-type>div input,
+#UpdateTraiteur_Tool>form>div select,
+#UpdateTraiteur_Tool>form>div input,
+#ReturnedTools_Page > div:first-of-type select,
+.Salle_Client_Select,
+#AddPicine > div:first-of-type > div:last-of-type select,
+.top-content select {
+  width: 100%;
+  background: #18191D;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"],
+input[type="button"],
+#UpdateTraiteur_Tool>form>div button,
+#Client_Page > div:first-of-type > form > div:last-of-type button,
+#CountsClient button,
+.bottom-content > div:last-child button,
+#Picine-bottom-content > div:first-child button,
+#LoginPage form > div:not(:first-of-type) button,
+#SallesX987438 > div:first-of-type button,
+#traiteurFilterX090909 button,
+#Cafe-bottom-content > div:first-of-type button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background: #56B9E1;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+input[type="button"] {
+  width: fit-content;
+}
+
+.top-content .left-top-content p,
+.top-content .right-top-content p {
+  font-size: .8rem;
+  margin-bottom: 5px;
+}
+
+.bottom-content {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-content p {
+  margin: 10px 0;
+}
+
+.filter {
+  color: #55C1FF;
+}
+
+.commande,
+.commande-link {
+  display: flex;
+  align-items: center;
+}
+
+.commande {
+  width: 750px;
+  justify-content: flex-end;
+}
+
+.commande-link {
+  width: 20%;
+  justify-content: space-between;
+}
+
+.commande-link p {
+  color: #55C1FF;
+}
+
+.head-table {
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-pool {
+  width: 750px;
+  max-height: 300px;
+  border: 1px solid #fff;
+  background: #18191D;
+  border-radius: 10px;
+  overflow-x: hidden;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  background: transparent;
+  border-collapse: collapse;
+}
+
+table thead {
+  width: 100%;
+}
+
+table thead th {
+  padding: 5px 0;
+}
+
+table tbody td {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#TraiteurToolsTable {
+  width: 1200px;
+}
+
+#TraiteurToolsTable tbody tr td {
+  width: calc(100% / 9);
+}
+
+#TraiteurToolsTable tbody tr td input {
+  width: 70%;
+}
+
+table tbody td button {
+  color: white;
+  border: 1px solid white;
+  padding: 3px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background: transparent;
+  outline: none;
+  margin-left: 3px;
+  transition: .5s all ease-in-out;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+}
+
+table tbody td button:hover {
+  color: #18191D;
+  background: white;
+}
+
+table tbody tr {
+  border-top: 1px solid #fff;
+  width: 100%;
+}
+
+.left-top-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-top-content div input {
+  width: 100%;
+}
+
+.date-total {
+  margin: 5px 0;
+}
+
+.date-left,
+.date-right {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0;
+}
+
+.date-left input,
+.date-right input {
+  width: 250px;
+}
+
+#UpdateTraiteur_Tool {
+  position: absolute;
+  padding: 15px 20px;
+  width: 450px;
+  height: 350px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #18191D;
+}
+
+#UpdateTraiteur_Tool>div:first-child {
+  display: flex;
+  justify-content: end;
+}
+
+#UpdateTraiteur_Tool>div:first-child img {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  filter: invert(100%);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#UpdateTraiteur_Tool>div:first-child img:hover {
+  background-color: rgb(1 177 162);
+}
+
+#UpdateTraiteur_Tool>form {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#UpdateTraiteur_Tool>form>div:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+#UpdateTraiteur_Tool>form>div * {
+  width: 100%;
+}
+
+#UpdateTraiteur_Tool>form>div select,
+#UpdateTraiteur_Tool>form>div input {
+  padding: 7px;
+  font-size: 1rem;
+}
+
+#UpdateTraiteur_Tool>form>div {
+  width: 100%;
+}
+
+#Client_Page, #ReturnedTools_Page {
+  padding: 40px;
+  overflow-x: hidden;
+}
+
+#Client_Page > div:first-of-type > h1, 
+#ReturnedTools_Page > div:first-of-type h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#ReturnedTools_Page > div:first-of-type > div {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#Client_Page > div:first-of-type > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#Client_Page > div:first-of-type > form > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#Client_Page > div:first-of-type > form > div:first-of-type,
+#Client_Page > div:first-of-type > form > div:last-of-type {
+  grid-column: span 2;
+}
+
+#Client_Page > div:first-of-type > form > div input {
+  font-size: 1.1rem;
+  padding: 5px 7px;
+}
+
+#Client_Page > div:first-of-type > form > div:not(:first-of-type) input {
+  width: 90%;
+}
+
+#Client_Page > div:first-of-type > form > div:first-of-type input,
+#Client_Page > div:first-of-type > form > div:last-of-type button {
+  width: 50%;
+}
+
+#Client_Page > div:first-of-type > form > div:last-of-type button {
+  font-size: 1.1rem;
+}
+
+#PoolPage div#Offers {
+  width: 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#AddPicine > div:first-of-type {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#PoolPage div#Offers div {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+  border: 2px solid;
+  transition: .2s ease-in;
+}
+
+#PoolPage div#Offers div:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.ActiveOffer {
+  transform: scale(.9);
+  background-color: white;
+  color: black;
+}
+
+#CountsClient {
+  width: 65%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#CountsClient input {
+  width: 65%;
+}
+
+#CountsClient button {
+  width: 30%;
+  margin: 0;
+}
+
+.left-top-content > div {
+  width: calc(90% / 2);
+}
+
+#expensesForm > div:first-child,
+#FormCafeePage > div:first-child {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#expensesForm > div:first-child > div,
+#FormCafeePage > div:first-child > div {
+  width: calc(90% / 5);
+}
+
+#expensesForm > div:first-child > div p,
+#FormCafeePage > div:first-child > div p {
+  margin-bottom: 7px;
+}
+
+#expensesForm > div:first-child > div input,
+#FormCafeePage > div:first-child > div input {
+  width: 100%;
+}
+
+.filterTraiteurTools {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.filterTraiteurTools > div {
+  display: flex;
+  align-items: center;
+}
+
+.filterTraiteurTools > div input {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#PicinePool, #Salle_total p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#Picine-bottom-content > div:last-child, #Salle_total {
+  width: 70%;
+  margin: 30px auto 0 auto;
+}
+
+#Picine-bottom-content > div:first-child {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#LoginPage {
+  height: 100vh;
+  background-color: #0D0E13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#LoginPage form {
+  width: 450px;
+  height: 300px;
+  background-color: #18191D;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+#LoginPage form > div:first-of-type {
+  width: fit-content;
+  margin: 0 auto 30px auto;
+}
+
+#LoginPage form > div:first-of-type img {
+  width: 100px;
+}
+
+#LoginPage form > div:not(:first-of-type) {
+  width: 70%;
+  margin: 0 auto 15px auto;
+}
+
+#LoginPage form > div:not(:first-of-type) input,
+#LoginPage form > div:not(:first-of-type) button {
+  width: 100%;
+}
+
+#logoutbtn {
+  width: 100%;
+  padding: 7px 0;
+  font-size: 1.1rem;
+  background: none;
+  color: #7E7E7E;
+  font-weight: bold;
+  border: 2px solid #7E7E7E;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#logoutbtn:hover {
+  background-color: #7E7E7E;
+  color: white;
+}
+
+.desableSelect {
+  pointer-events: none;
+  opacity: .6;
+}
+
+#SallesX987438 > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#SallesX987438 > div:first-of-type > div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#traiteurFilterX090909 {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.list-personel{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+  
+  #Cafe-bottom-content > div:first-of-type {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
