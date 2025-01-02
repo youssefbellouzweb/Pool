@@ -4,8 +4,8 @@ import React from "react";
 
 export default function petit_salle() {
   return (
-    <div class="part-1">
-      <div class="content">
+    <div className="part-1">
+      <div className="content">
         <div className="bottom-content">
           <div className="commande">
             <Link href="/traiteur" className="commande">
@@ -25,7 +25,7 @@ export default function petit_salle() {
               <Image width={10} height={10} src="/imgs/filter.png" alt="" />
             </div>
           </div>
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">#</th>

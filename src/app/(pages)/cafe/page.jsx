@@ -2,16 +2,16 @@ import React from "react";
 
 export default function cafe() {
   return (
-    <div class="part-1">
+    <div className="part-1">
       <nav>
-        <div class="left-nav">
+        <div className="left-nav">
           <h1>cafe</h1>
           <div>La Section Cafe</div>
         </div>
       </nav>
-      <div class="content">
+      <div className="content">
         <form id="FormCafeePage">
-          <div class="top-content">
+          <div className="top-content">
             <div>
               <p>Ajouter le nom de l{`'`}employé:</p>
               <input
@@ -61,7 +61,7 @@ export default function cafe() {
             </button>
           </div>
           <div className="table-pool">
-            <table class="table">
+            <table className="table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
